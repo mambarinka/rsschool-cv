@@ -10,7 +10,7 @@ My goal is to become a good front-end developer. I have little experience in cre
 
 ## Skills:
 
-###Hard skills
+### Hard skills
 
 *programming:*
 HTML, CSS (+Less, Sass, Gulp), JavaScript , Git, Vs Code
@@ -18,7 +18,7 @@ HTML, CSS (+Less, Sass, Gulp), JavaScript , Git, Vs Code
 *others:*
 Photoshop, Figma, Zeplin
 
-###Soft skills
+### Soft skills
 Good Comunication 
 
 ## Code sample:
@@ -44,7 +44,8 @@ if (buttonCart) {
 Civil Engineering Faculty
 *2005-2009*  
 
-###Self-education: 
+### Self-education: 
+
 HTML, CSS, JavaScript courses on [html.academy](https://htmlacademy.ru/courses)
 
 Intensive: HTML and CSS. Professional website layout [html.academy](https://htmlacademy.ru/intensive/htmlcss/29)
