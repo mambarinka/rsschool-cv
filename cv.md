@@ -1,14 +1,4 @@
-<!-- Имя и фамилия
-Контакты для связи
-Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении и способности быстро учиться и узнавать новое)
-Навыки (языки программирования, фреймворки, методологии, системы контроля версий и инструменты разработки, которыми вы владеете)
-Примеры кода
-Опыт работы. Junior Dev может указать пройденные курсы и тренинги, перечислить учебные проекты, или проекты, выполненные на фрилансе с указанием использованных навыков и ссылками на исходный код.*
-Образование (включая курсы, семинары, лекции, онлайн-обучение)
-Английский язык (уровень английского языка, если была языковая практика, расскажите о ней) -->
-
 # ANNA TEKUNOVA
----
 
 ## Contacts:
 * e-mail: mambarinka@gmail.com
@@ -21,10 +11,7 @@ My goal is to become a good front-end developer. I have little experience in cre
 ## Skills:
 ***Hard skills***
 *programming:*
-◾◾◾◾◽ HTML  
-◾◾◾◾◽ CSS, Less, Sass, Gulp
-◾◾◾◽◽ Git, Vs Code
-◾◾◽◽◽ JavaScript  
+HTML, CSS (+Less, Sass, Gulp), JavaScript ,Git, Vs Code
 
 *others:*
 Photoshop, Figma, Zeplin
@@ -47,3 +34,17 @@ if (buttonCart) {
   }
 };
 ```
+
+## Education and experience ## 
+**Izhevsk State Technical University** 
+Civil Engineering Faculty
+*2005-2009*  
+
+**Self-education:** 
+HTML, CSS, JavaScript courses on [html.academy](https://htmlacademy.ru/courses)  
+Intensive: HTML and CSS. Professional website layout [html.academy](https://htmlacademy.ru/intensive/htmlcss/29)
+Intensive: HTML and CSS. Responsive layout and automation [html.academy](https://htmlacademy.ru/intensive/adaptive/21)
+Intensive: JavaScript. Professional development of web interfaces [html.academy](https://htmlacademy.ru/intensive/javascript/22) - *continue now
+
+## English ##  
+**Pre-intermediate (A2)**  
