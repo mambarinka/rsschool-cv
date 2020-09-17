@@ -1,3 +1,5 @@
+/* ГЛОБАЛЬНЫЕ СТИЛИ */
+
 html {
   box-sizing: border-box;
 }
@@ -25,7 +27,7 @@ img {
 }
 
 a {
-  text-decoration: none;
+  color: black;
 }
 
 .visually-hidden:not(:focus),
@@ -46,21 +48,34 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+section {
+  padding: 25px;
+}
+
+/* ОБЩИЕ СТИЛИ */
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 10px;
-
-  border: 1px solid black;
 }
 
 .name .container {
   display: flex;
   align-items: center;
-}
-
-.name__img {
-  margin-right: 50px;
 }
 
 .contacts__title,
@@ -69,5 +84,136 @@ input[type="radio"].visually-hidden {
 .code-examples__title,
 .education-experience__title,
 .english__title {
-  color: #c9823e;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  color: #4682b4;
+
+  border-bottom: 2px solid #c0c0c0;
+}
+
+/* HEADER */
+
+.name__img {
+  margin-right: 50px;
+
+  border-radius: 50%;
+}
+
+.name__title {
+  color: #4682b4;
+}
+
+/* MAIN */
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contacts__item--location,
+.contacts__item--mail,
+.contacts__item--phone,
+.contacts__item--telegram {
+  position: relative;
+  padding-left: 40px;
+}
+
+.contacts__item--location::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: 0;
+
+  background: url("../img/location-icon.ico") no-repeat center;
+  background-size: 25px 25px;
+}
+
+
+.contacts__item--mail::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: 0;
+
+  background: url("../img/mail-icon.ico") no-repeat center;
+  background-size: 30px 30px;
+}
+
+.contacts__item--phone::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: -3px;
+  left: 0;
+
+  background: url("../img/phone-icon.ico") no-repeat center;
+  background-size: 25px 25px;
+}
+
+.contacts__item--telegram::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: 0;
+
+  background: url("../img/telegram-icon.ico") no-repeat center;
+  background-size: 25px 25px;
+}
+
+.summary__text {
+  width: 740px;
+  padding-left: 50px;
+}
+
+.skills__title-hard,
+.skills__title-soft {
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  color: rgba(70, 130, 180, 0.7);
+}
+
+.skills__list {
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.skills__item {
+  margin-bottom: 10px;
+}
+
+.skills__title-programming,
+.skills__title-others {
+  margin-bottom: 20px;
+
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: underline;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.skills__soft-text {
+  padding-left: 60px;
+}
+
+.education-experience__list {
+  padding-left: 50px;
+  list-style: disc;
+}
+
+.education-experience__item {
+  margin-bottom: 10px;
+}
+
+.english-text {
+  padding-left: 50px;
 }
