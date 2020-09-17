@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Anna Tekunova CV</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="name">
+    <div class="container">
+      <img class="name__img" src="img/myCat.jpg" alt="photo of my cat" width="150">
+      <h1 class="name__title">Anna Tekunova</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="contacts">
+        <h2 class="contacts__title">Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__item--location">Izhevsk, Russia</p>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__item--mail" href="mailto:mambarinka@mail.ru">mambarinka@mail.ru</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__item--phone" href="tel:+79120116562">Тел: +7(912) 011-65-62</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__item--telegram" href="tg://resolve?domain=anya_tav">@anya_tav</a>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="summary">
+        <h2 class="summary__title">Summary</h2>
+        <p class="summary__text">My goal is to become a good front-end developer.
+          I have little experience in creating websites. Every day I learn
+          something new in this area and I am very interested! I think programming is cool. You can spend a lot of
+          time solving a
+          problem, but the final result will be pleasing.</p>
+      </section>
+
+      <section class="skills">
+        <h2 class="skills__title">Skills</h2>
+
+        <h3 class="skills__title-hard">Hard skills</h3>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h4 class="skills__title-programming">programming:</h4>
+            <p>HTML, CSS (+Less, Sass, Gulp), JavaScript , Git, Vs Code</p>
+          </li>
+          <li class="skills__item">
+            <h4 class="skills__title-others">others:</h4>
+            <p>Photoshop, Figma, Zeplin</p>
+          </li>
+        </ul>
+
+        <h3 class="skills__title-soft">Soft skills</h3>
+        <p class="skills__soft-text">Good Comunication</p>
+      </section>
+
+      <section class="code-examples">
+        <h2 class="code-examples__title">Code sample:</h2>
+        <pre class="code"><code><!-- find all buttons: -->
+            var buttonCart = document.querySelectorAll(".js-button-cart");
+            var modal = document.querySelector(".modal");
+
+            <!-- by clicking on the button, open a modal window: -->
+            if (buttonCart) {
+              for (var i = 0; i &lt; buttonCart.length; i++) {
+                buttonCart[i].addEventListener("click", function (evt) {
+                  evt.preventDefault();
+                  modal.classList.add("modal--js-show");
+                })
+              }
+            };</code></pre>
+      </section>
+
+      <section class="education-experience">
+        <h2 class="education-experience__title">Education and experience</h2>
+        <ul class="education-experience__list">
+          <li class="education-experience__item">
+            <p>Izhevsk State Technical University</p>
+            <p>Civil Engineering Faculty</p>
+            <p>2005-2009</p>
+          </li>
+          <li class="education-experience__item">
+            <p>HTML, CSS, JavaScript courses on <a href="https://htmlacademy.ru/courses"></a></p>
+          </li>
+          <li class="education-experience__item">
+            <p>Intensive: HTML and CSS. Professional website layout <a
+                href="https://htmlacademy.ru/intensive/htmlcss/29">(HTML Academy)</a></p>
+          </li>
+          <li class="education-experience__item">
+            <p>Intensive: HTML and CSS. Responsive layout and
+              automation <a href="https://htmlacademy.ru/intensive/adaptive/21">(HTML Academy)</a></p>
+          </li>
+          <li class="education-experience__item">
+            <p>Intensive: JavaScript. Professional
+              development of web interfaces <a href="https://htmlacademy.ru/intensive/javascript/22">(HTML Academy)</a>
+              <span>- *continue now</span>
+            </p>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="english">
+        <h2 class="english__title">English</h2>
+        <p class="english-text">Pre-intermediate (A2)</p>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
