@@ -73,9 +73,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1024px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 5% 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   background-color: #e6c3b0;
   box-shadow: inset 2px 2px 2px 0 white,
@@ -90,6 +91,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 65%;
+  padding: 5% 40px;
 }
 
 .container__column--contacts {
@@ -248,4 +250,37 @@ input[type="radio"].visually-hidden {
 
 .english-text {
   padding-left: 50px;
+}
+
+.information {
+  display: flex;
+  width: 100%;
+  padding: 20px 40px;
+
+  border-top: 2px solid #1a3657;
+}
+
+.information__github {
+  position: relative;
+  width: 18%;
+  margin-right: auto;
+}
+
+.information__github::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -7px;
+  right: 0;
+
+  background: url("./img/github-icon.svg") no-repeat center;
+  background-size: 25px 25px;
+}
+
+.information__rsschool {
+  width: 100px;
+  height: 50px;
+  background: url("./img/rs_school-icon.svg") no-repeat center;
+  /* background-size: 25px 25px; */
 }
