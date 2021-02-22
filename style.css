@@ -14,11 +14,15 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  color: #1a3657;
+
+  background-color: #cd9575;
 }
 
 img {
@@ -27,25 +31,8 @@ img {
 }
 
 a {
-  color: black;
-}
-
-.visually-hidden:not(:focus),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  color: #475465;
+  text-decoration: none;
 }
 
 ul {
@@ -62,20 +49,58 @@ p {
   margin: 0;
 }
 
-section {
-  padding: 25px;
+.visually-hidden:not(:focus),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-/* ОБЩИЕ СТИЛИ */
-
 .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1024px;
   margin: 0 auto;
+  padding: 5% 40px;
+
+  background-color: #e6c3b0;
+  box-shadow: inset 2px 2px 2px 0 white,
+    inset 0 0 0 4px #4f5054,
+    inset 0 0 0 5px black,
+    inset -5px -5px 5px 3px white,
+    inset 0 0 0 9px #6c6d70,
+    inset 0 0 0 10px black;
+}
+
+.container__column {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.container__column--contacts {
+  width: 35%;
 }
 
 .name {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .contacts__title,
@@ -84,31 +109,38 @@ section {
 .code-examples__title,
 .education-experience__title,
 .english__title {
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  color: #4682b4;
+  margin-bottom: 25px;
+  padding: 10px 5%;
+  color: #854826;
 
-  border-bottom: 2px solid #c0c0c0;
+  background-color: #e6b79c;
 }
 
-/* HEADER */
 
 .name__img {
-  margin-right: 50px;
-
-  border-radius: 50%;
+  margin-bottom: 50px;
 }
 
 .name__title {
-  color: #4682b4;
+  margin-bottom: 10px;
+  color: #1a3657;
 }
 
-/* MAIN */
+.name__description {
+  color: #9a7a68
+}
+
+.contacts__title {
+  line-height: 100%;
+}
 
 .contacts__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
 }
 
 .contacts__item--location,
@@ -127,7 +159,7 @@ section {
   top: -3px;
   left: 0;
 
-  background: url("../img/location-icon.ico") no-repeat center;
+  background: url("./img/location-icon.svg") no-repeat center;
   background-size: 25px 25px;
 }
 
@@ -140,7 +172,7 @@ section {
   top: -3px;
   left: 0;
 
-  background: url("../img/mail-icon.ico") no-repeat center;
+  background: url("./img/mail-icon.svg") no-repeat center;
   background-size: 30px 30px;
 }
 
@@ -152,7 +184,7 @@ section {
   top: -3px;
   left: 0;
 
-  background: url("../img/phone-icon.ico") no-repeat center;
+  background: url("./img/phone-icon.svg") no-repeat center;
   background-size: 25px 25px;
 }
 
@@ -164,7 +196,7 @@ section {
   top: -3px;
   left: 0;
 
-  background: url("../img/telegram-icon.ico") no-repeat center;
+  background: url("./img/telegram-icon.svg") no-repeat center;
   background-size: 25px 25px;
 }
 
