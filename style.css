@@ -14,11 +14,15 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 26px;
   font-weight: 400;
+  color: #000000;
+
+  background-color: #E6E6E6;
 }
 
 img {
@@ -27,25 +31,9 @@ img {
 }
 
 a {
-  color: black;
-}
-
-.visually-hidden:not(:focus),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
 }
 
 ul {
@@ -62,53 +50,92 @@ p {
   margin: 0;
 }
 
-section {
-  padding: 25px;
-}
+.visually-hidden:not(:focus),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
-/* ОБЩИЕ СТИЛИ */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .container {
-  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1200px;
   margin: 0 auto;
+
+  background-color: #FFFFFF;
+
+  border: 2px solid #6F6F6F;
 }
 
-.name .container {
+.container__column {
   display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding: 2% 40px;
+  background-color: #F6F6F6;
+}
+
+.container__column--contacts {
+  width: 35%;
+  background-color: #B9B9B9
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .contacts__title,
-.summary__title,
+.about-me__title,
 .skills__title,
-.code-examples__title,
-.education-experience__title,
+.code-example__title,
+.education__title,
 .english__title {
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  color: #4682b4;
+  margin-bottom: 25px;
+  padding: 10px 5%;
+  color: #892F2F;
 
-  border-bottom: 2px solid #c0c0c0;
+  background-color: #9A9A9A;
 }
 
-/* HEADER */
-
 .name__img {
-  margin-right: 50px;
-
-  border-radius: 50%;
+  margin-bottom: 50px;
 }
 
 .name__title {
-  color: #4682b4;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  color: #721717;
 }
 
-/* MAIN */
+.name__description {
+  color: #EEEEEE
+}
 
 .contacts__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
 }
 
 .contacts__item--location,
@@ -127,7 +154,7 @@ section {
   top: -3px;
   left: 0;
 
-  background: url("../img/location-icon.ico") no-repeat center;
+  background: url("./img/location-icon.svg") no-repeat center;
   background-size: 25px 25px;
 }
 
@@ -140,7 +167,7 @@ section {
   top: -3px;
   left: 0;
 
-  background: url("../img/mail-icon.ico") no-repeat center;
+  background: url("./img/mail-icon.svg") no-repeat center;
   background-size: 30px 30px;
 }
 
@@ -152,7 +179,7 @@ section {
   top: -3px;
   left: 0;
 
-  background: url("../img/phone-icon.ico") no-repeat center;
+  background: url("./img/phone-icon.svg") no-repeat center;
   background-size: 25px 25px;
 }
 
@@ -164,56 +191,105 @@ section {
   top: -3px;
   left: 0;
 
-  background: url("../img/telegram-icon.ico") no-repeat center;
+  background: url("./img/telegram-icon.svg") no-repeat center;
   background-size: 25px 25px;
 }
 
-.summary__text {
-  width: 740px;
-  padding-left: 50px;
+.about-me {
+  padding-bottom: 25px;
 }
 
-.skills__title-hard,
-.skills__title-soft {
-  margin-bottom: 20px;
-  padding-left: 20px;
+.about-me__text {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-  color: rgba(70, 130, 180, 0.7);
+.education {
+  padding-bottom: 25px;
+}
+
+.education__list {
+  padding-left: 50px;
+  list-style: disc;
+}
+
+.education__item {
+  margin-bottom: 10px;
+}
+
+.skills {
+  padding-bottom: 25px;
 }
 
 .skills__list {
   padding-left: 50px;
-  padding-bottom: 20px;
+  list-style: disc;
 }
 
 .skills__item {
   margin-bottom: 10px;
 }
 
-.skills__title-programming,
-.skills__title-others {
-  margin-bottom: 20px;
-
-  font-style: italic;
-  font-weight: 400;
-  text-decoration: underline;
-
-  color: rgba(0, 0, 0, 0.7);
+.code-example {
+  padding-bottom: 25px;
 }
 
-.skills__soft-text {
-  padding-left: 60px;
+.code-example__content {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  font-size: 0.9em;
 }
 
-.education-experience__list {
-  padding-left: 50px;
-  list-style: disc;
-}
+.code-example__content code {
+  width: 90%;
 
-.education-experience__item {
-  margin-bottom: 10px;
+  background-color: #ffffff;
 }
 
 .english-text {
   padding-left: 50px;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+
+  border-top: 2px solid #6F6F6F;
+}
+
+.information__github {
+  position: relative;
+  width: 18%;
+  margin-right: auto;
+}
+
+.information__github::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  right: 0;
+
+  background: url("./img/github-icon.svg") no-repeat center;
+  background-size: 25px 25px;
+}
+
+.information__rsschool {
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+
+  background: url("./img/rs_school-icon.svg") no-repeat center;
+}
+
+.information__year {
+  width: 9%;
+  font-size: 1.2em;
+  font-weight: 700;
 }
