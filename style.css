@@ -18,11 +18,11 @@ body {
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 26px;
   font-weight: 400;
-  color: #1a3657;
+  color: #000000;
 
-  background-color: #cd9575;
+  background-color: #E6E6E6;
 }
 
 img {
@@ -31,7 +31,8 @@ img {
 }
 
 a {
-  color: #475465;
+  font-weight: 600;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -75,27 +76,23 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
 
-  background-color: #e6c3b0;
-  box-shadow: inset 2px 2px 2px 0 white,
-    inset 0 0 0 4px #4f5054,
-    inset 0 0 0 5px black,
-    inset -5px -5px 5px 3px white,
-    inset 0 0 0 9px #6c6d70,
-    inset 0 0 0 10px black;
+  background-color: #FFFFFF;
+
+  border: 2px solid #6F6F6F;
 }
 
 .container__column {
   display: flex;
   flex-direction: column;
   width: 65%;
-  padding: 5% 40px;
+  padding: 2% 40px;
+  background-color: #F6F6F6;
 }
 
 .container__column--contacts {
   width: 35%;
+  background-color: #B9B9B9
 }
 
 .name {
@@ -106,18 +103,17 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts__title,
-.summary__title,
+.about-me__title,
 .skills__title,
-.code-examples__title,
-.education-experience__title,
+.code-example__title,
+.education__title,
 .english__title {
   margin-bottom: 25px;
   padding: 10px 5%;
-  color: #854826;
+  color: #892F2F;
 
-  background-color: #e6b79c;
+  background-color: #9A9A9A;
 }
-
 
 .name__img {
   margin-bottom: 50px;
@@ -125,15 +121,12 @@ input[type="radio"].visually-hidden {
 
 .name__title {
   margin-bottom: 10px;
-  color: #1a3657;
+  font-size: 2.5em;
+  color: #721717;
 }
 
 .name__description {
-  color: #9a7a68
-}
-
-.contacts__title {
-  line-height: 100%;
+  color: #EEEEEE
 }
 
 .contacts__list {
@@ -202,50 +195,57 @@ input[type="radio"].visually-hidden {
   background-size: 25px 25px;
 }
 
-.summary__text {
-  width: 740px;
-  padding-left: 50px;
+.about-me {
+  padding-bottom: 25px;
 }
 
-.skills__title-hard,
-.skills__title-soft {
-  margin-bottom: 20px;
-  padding-left: 20px;
+.about-me__text {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-  color: rgba(70, 130, 180, 0.7);
+.education {
+  padding-bottom: 25px;
+}
+
+.education__list {
+  padding-left: 50px;
+  list-style: disc;
+}
+
+.education__item {
+  margin-bottom: 10px;
+}
+
+.skills {
+  padding-bottom: 25px;
 }
 
 .skills__list {
   padding-left: 50px;
-  padding-bottom: 20px;
+  list-style: disc;
 }
 
 .skills__item {
   margin-bottom: 10px;
 }
 
-.skills__title-programming,
-.skills__title-others {
-  margin-bottom: 20px;
-
-  font-style: italic;
-  font-weight: 400;
-  text-decoration: underline;
-
-  color: rgba(0, 0, 0, 0.7);
+.code-example {
+  padding-bottom: 25px;
 }
 
-.skills__soft-text {
-  padding-left: 60px;
+.code-example__content {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  font-size: 0.9em;
 }
 
-.education-experience__list {
-  padding-left: 50px;
-  list-style: disc;
-}
+.code-example__content code {
+  width: 90%;
 
-.education-experience__item {
-  margin-bottom: 10px;
+  background-color: #ffffff;
 }
 
 .english-text {
@@ -254,10 +254,12 @@ input[type="radio"].visually-hidden {
 
 .information {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 20px 40px;
 
-  border-top: 2px solid #1a3657;
+  border-top: 2px solid #6F6F6F;
 }
 
 .information__github {
@@ -271,7 +273,7 @@ input[type="radio"].visually-hidden {
   content: "";
   width: 30px;
   height: 30px;
-  top: -7px;
+  top: -3px;
   right: 0;
 
   background: url("./img/github-icon.svg") no-repeat center;
@@ -281,6 +283,13 @@ input[type="radio"].visually-hidden {
 .information__rsschool {
   width: 100px;
   height: 50px;
+  margin-left: auto;
+
   background: url("./img/rs_school-icon.svg") no-repeat center;
-  /* background-size: 25px 25px; */
+}
+
+.information__year {
+  width: 9%;
+  font-size: 1.2em;
+  font-weight: 700;
 }
