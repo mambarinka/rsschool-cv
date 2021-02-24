@@ -2,7 +2,7 @@
 
 ## Contacts:
 * e-mail: mambarinka@gmail.com
-* phone: +7-912-011-**-*2
+* phone: +7-912-011-65-62
 * telegram: anya_tav
 
 ## Summary:
@@ -52,7 +52,7 @@ Intensive: HTML and CSS. Professional website layout [html.academy](https://html
 
 Intensive: HTML and CSS. Responsive layout and automation [html.academy](https://htmlacademy.ru/intensive/adaptive/21)
 
-Intensive: JavaScript. Professional development of web interfaces [html.academy](https://htmlacademy.ru/intensive/javascript/22) - *continue now
+Intensive: JavaScript. Professional development of web interfaces [html.academy](https://htmlacademy.ru/intensive/javascript/22) 
 
 ## English ##  
 **Pre-intermediate (A2)**  
