@@ -217,6 +217,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+.education__img {
+  width:100px;
+}
+
 .skills {
   padding-bottom: 25px;
 }
@@ -281,6 +285,7 @@ input[type="radio"].visually-hidden {
 }
 
 .information__rsschool {
+  display: inline-block;
   width: 100px;
   height: 50px;
   margin-left: auto;
